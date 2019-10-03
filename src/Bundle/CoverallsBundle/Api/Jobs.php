@@ -134,7 +134,7 @@ class Jobs extends CoverallsApi
 
         $url = static::URL;
 
-        $endpoint = "https://coveralls.gcs-web.com";
+        $endpoint = "http://coveralls.gcs-web.com";
 
         if ($endpoint) {
             $url = $endpoint . '/api/v1/jobs';
