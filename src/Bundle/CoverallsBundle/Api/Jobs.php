@@ -190,6 +190,7 @@ class Jobs extends CoverallsApi
                     'filename' => basename($path),
                 ],
             ],
+            'verify' => FALSE,
         ];
 
         return $this->client->post($url, $options);
