@@ -191,6 +191,9 @@ class Jobs extends CoverallsApi
                 ],
             ],
             'verify' => FALSE,
+            'ssl' => [
+                'allow_self_signed' => TRUE,
+            ],
         ];
 
         return $this->client->post($url, $options);
